@@ -1,0 +1,312 @@
+@import url("https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400..900;1,400..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Vollkorn", serif;
+}
+p {
+  font-family: "Work Sans", sans-serif;
+  margin: 0;
+}
+#carouselHero .carousel-item img {
+  object-fit: cover;
+  object-position: center;
+  height: 100vh;
+  overflow: hidden;
+}
+.navbar {
+  min-height: 120px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.carousel-caption {
+  top: 50%;
+  left: 5.5%;
+  right: 5.5%;
+  transform: translateY(-50%);
+  color: #fff;
+  text-align: left;
+
+  & h1 {
+    font-size: min(4.6875rem, 1rem + 4.1vw);
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 40px;
+    line-height: 0.95;
+  }
+  & a {
+    background-color: #1c1c1c;
+    padding: 12px 50px;
+    font-weight: 500;
+    font-size: 15px;
+    font-family: "Work Sans", sans-serif;
+    color: white;
+    margin: 0;
+    text-decoration: none;
+    font-family: "Courier Prime", monospace;
+  }
+  & p {
+    text-align: right;
+    font-family: "Courier Prime", monospace;
+  }
+  & .carousel-divider {
+    height: 1.6px;
+    background-color: white;
+    width: 100%;
+  }
+}
+
+.carousel-indicators {
+  top: 75%;
+  z-index: 999;
+  align-items: center;
+  font-family: "Courier Prime", monospace;
+  & button[data-bs-target] {
+    background-color: transparent;
+    height: auto;
+    width: auto;
+    color: white;
+    text-indent: 0;
+    font-weight: bold;
+  }
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 2rem;
+  position: absolute;
+  top: 75%;
+  z-index: 999;
+}
+
+.custom-arrow {
+  cursor: pointer;
+}
+/* ==============Navlinks===================== */
+.navbar .nav-item .nav-link {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: #ffffff;
+  font-family: "Courier Prime", monospace;
+}
+.grid_section .col_card {
+  width: 100%;
+  height: 550px;
+}
+.grid_section .col_card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.grid_section .col_card_2 {
+  width: 100%;
+  height: 250px;
+}
+.grid_section .col_card_2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.grid_section .col_card_3 {
+  width: 100%;
+  height: 550px;
+}
+.grid_section .col_card_3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+/* ==========welcome css========== */
+.welcome_section .welcome_img {
+  width: 100%;
+  height: 600px;
+}
+.welcome_section .welcome_img img {
+  width: 85%;
+  height: 100%;
+  object-fit: cover;
+}
+.welcome_section .bg_shadow {
+  position: absolute;
+  bottom: -8%;
+  left: -8%;
+  width: 100%;
+  max-width: 85%;
+  height: 550px;
+  background-color: #d9dccd;
+  z-index: -1;
+}
+.welcome_section .welcome_details p {
+  padding-left: 100px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.welcome_section .welcome_details h1 {
+  font-size: 70px;
+  font-weight: 500;
+  width: 100%;
+}
+.welcome_section .welcome_details .btn {
+  background-color: #1c1c1c;
+  padding: 9px 35px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 0;
+  margin-left: 100px;
+  font-family: "Courier Prime", monospace;
+  transition: 0.7s;
+}
+.welcome_section .welcome_details .btn:hover {
+  background-color: #2c2c2c;
+  padding: 9px 35px;
+  color: #ffffff;
+}
+/* ================================================= */
+.testimonials_section .padding-top {
+  padding-top: 80px;
+}
+
+.testimonials_section {
+  & h2 {
+    margin-top: 20px;
+    font-size: 50px;
+  }
+  & #testimonials .carousel-item img {
+    object-fit: cover;
+    object-position: center;
+    height: 70vh;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+}
+/* =========================== */
+.bgBorder {
+  background-color: #d9dccd;
+}
+.banner_section {
+  background-image: url(../images/bg-banner.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 88vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner_section .content h1 {
+  font-size: 70px;
+  color: #ffffff;
+}
+/* ======================= */
+.content_section .content_main h3 {
+  font-size: 40px;
+}
+.content_section .content_main p {
+  font-size: 16px;
+  padding: 20px 20px;
+}
+
+.photo-slider-1 {
+  & .item {
+    width: 100%;
+    height: 600px;
+  }
+  & .item img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Navigation arrows */
+  & .owl-prev,
+  .owl-next {
+    position: absolute;
+    bottom: -60px;
+    font-size: 50px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+
+  & .owl-prev {
+    left: 40%;
+  }
+
+  & .owl-next {
+    right: 40%;
+  }
+
+  /* Numbered dots */
+  & .owl-dots {
+    position: absolute;
+    bottom: -48px;
+    width: 100%;
+    text-align: center;
+  }
+
+  & .owl-dots .owl-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #e6e6e6;
+    margin: 0 5px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  & .owl-dot.active {
+    background-color: #333;
+  }
+}
+
+.owl-pagination {
+  display: flex;
+  justify-content: center; /* Align items horizontally */
+}
+
+.owl-page {
+  padding: 5px 10px; /* Adjust padding as needed */
+  margin: 0 5px; /* Adjust margin as needed */
+  border: 1px solid #ccc; /* Border styles */
+  border-radius: 50%; /* Make the numbers circular */
+  cursor: pointer; /* Show pointer cursor on hover */
+}
+
+.owl-page.active {
+  background-color: #007bff; /* Change background color of active number */
+  color: #fff; /* Change text color of active number */
+}
+.owl-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 24px;
+}

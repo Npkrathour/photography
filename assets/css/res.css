@@ -1,0 +1,53 @@
+@media screen and (max-width: 820px) {
+  .banner_section .content h1 {
+    font-size: 38px;
+    color: #ffffff;
+  }
+  .welcome_img img {
+    width: 100% !important;
+    height: 100%;
+  }
+  .welcome_img {
+    width: 100%;
+    height: auto;
+  }
+  .welcome_details h1 {
+    font-size: 38px !important;
+  }
+  .welcome_details p {
+    padding-left: 0px !important;
+  }
+  .grid_section .col_card {
+    width: 100%;
+    height: auto;
+  }
+  .testimonials_section {
+    & h2 {
+      margin-top: 10px;
+      font-size: 38px;
+    }
+  }
+  .testimonials_section .padding-top {
+    padding-top: 0px;
+  }
+  .content_section .content_main h3 {
+    font-size: 38px;
+  }
+  .content_section .content_main p {
+    font-size: 16px;
+    padding: 0px 0px;
+    text-align: justify;
+  }
+}
+@media screen and (max-width: 520px) {
+  .photo-slider-1 {
+    & .owl-prev {
+      left: 20%;
+    }
+  }
+  .photo-slider-1 {
+    & .owl-next {
+      right: 20%;
+    }
+  }
+}
